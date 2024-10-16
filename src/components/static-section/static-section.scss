@@ -1,0 +1,31 @@
+.static-section {
+  &__wrapper {
+    background-color: var(--color-light);
+  }
+  &__content {
+    max-width: 79.8rem;
+    margin: 0 auto 0;
+    padding: 40px 80px 80px;
+    background-color: var(--color-light);
+    position: relative;
+    z-index: 2;
+    @include media-breakpoint-only(xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @include media-breakpoint-only(lg) {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 32px;
+    }
+    @include media-breakpoint-down(xl) {
+      margin-top: 0;
+    }
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 40px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 24px;
+    }
+  }
+}

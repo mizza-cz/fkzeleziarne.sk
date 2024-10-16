@@ -1,0 +1,14 @@
+{% extends "@components/base/base.twig" %} {% set title = "03.0_static" %} {%
+block main %}
+
+ 
+{% include "@components/static-section/static-section.twig" %}
+<div class="pubHomepage">
+  <div class="container">
+    <a class="pub" href="#" target="_blank">
+      <img src="images/content/pub-1.png" loading="lazy" alt="" />
+    </a>
+  </div>
+</div>
+
+{% include "@components/posts/posts-homepage.twig" %} {% endblock %}
