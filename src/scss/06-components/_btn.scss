@@ -1,0 +1,47 @@
+/*! purgecss start ignore */
+.btn {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  letter-spacing: 0.1em;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: "Right Gothic Tight";
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.btn-primary {
+  background: var(--color-primary-100);
+  color: var(--color-light);
+}
+.btn-ticket {
+  color: var(--color-primary-100);
+  background: var(--color-light);
+  padding: 8px 16px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  &:hover {
+    background: rgba(#fff, 0.8);
+    color: rgba(137, 33, 42, 1);
+  }
+}
+.btn-shop {
+  color: var(--color-light);
+  background: var(--color-dark);
+  padding: 8px 16px;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color-light);
+  }
+}
+/*! purgecss end ignore */
