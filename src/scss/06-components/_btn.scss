@@ -2,7 +2,7 @@
 .btn {
   font-size: 18px;
   font-weight: 500;
-  line-height: 21.6px;
+  line-height: 1.065rem;
   letter-spacing: 0.1em;
   padding: 16px 24px;
   text-transform: uppercase;
@@ -16,6 +16,9 @@
 .btn-primary {
   background: var(--color-primary-100);
   color: var(--color-light);
+  &:hover {
+    background: var(--color-secondary-100);
+  }
 }
 .btn-ticket {
   color: var(--color-primary-100);

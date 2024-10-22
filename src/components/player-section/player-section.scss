@@ -1,0 +1,109 @@
+.playerDetail {
+  display: flex;
+  max-width: 85.5rem;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 56px;
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &__img {
+    max-width: 45.6%;
+    flex: 0 0 45.6%;
+    background-color: var(--color-secondary-100);
+    display: flex;
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+      flex: 100%;
+    }
+    img {
+      width: 80%;
+      object-fit: contain;
+      margin: 0 auto;
+      object-position: bottom;
+      max-height: 550px;
+    }
+  }
+  &__info {
+    max-width: 54.4%;
+    flex: 0 0 54.4%;
+    background-color: var(--color-primary-100);
+    position: relative;
+    padding-left: 120px;
+    padding-top: 46px;
+    padding-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+      flex: 100%;
+      padding-top: 24px;
+      padding-left: 0;
+    }
+  }
+  &__title {
+    color: var(--color-light);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 56px;
+    padding-left: 40px;
+    margin-bottom: 56px;
+    @include media-breakpoint-down(lg) {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 40px;
+    }
+    span {
+      display: block;
+      font-size: 64px;
+      line-height: 40px;
+      @include media-breakpoint-down(lg) {
+        font-size: 48px;
+        line-height: 50px;
+      }
+    }
+  }
+  &__number {
+    color: var(--color-light);
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 16px 24px 24px;
+    background-color: var(--color-dark);
+    height: 120px;
+    min-width: 120px;
+    @include media-breakpoint-down(lg) {
+      font-size: 64px;
+      height: 88px;
+      line-height: normal;
+      min-width: 88px;
+      padding: 0;
+      text-align: center;
+      top: -88px;
+    }
+  }
+  &__list {
+    color: var(--color-light);
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    @include media-breakpoint-down(lg) {
+      padding: 0 40px;
+    }
+    li + li {
+      margin-top: 16px;
+    }
+    span {
+      display: block;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+  }
+}
