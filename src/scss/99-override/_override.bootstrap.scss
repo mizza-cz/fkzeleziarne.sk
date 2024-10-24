@@ -24,4 +24,10 @@ strong {
 .mb-2 {
   margin-bottom: 1rem !important;
 }
+.text-dark {
+  color: var(--color-dark) !important;
+}
+.text-primary {
+  color: var(--color-primary-100) !important;
+}
 /*! purgecss end ignore */

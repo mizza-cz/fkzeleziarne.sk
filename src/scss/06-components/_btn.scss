@@ -12,12 +12,21 @@
   align-items: center;
   gap: 8px;
   justify-content: center;
+  width: fit-content;
 }
 .btn-primary {
   background: var(--color-primary-100);
   color: var(--color-light);
   &:hover {
     background: var(--color-secondary-100);
+  }
+}
+.btn-white {
+  color: var(--color-primary-100);
+  background: var(--color-light);
+  &:hover {
+    background-color: var(--color-primary-100);
+    color: var(--color-light);
   }
 }
 .btn-ticket {

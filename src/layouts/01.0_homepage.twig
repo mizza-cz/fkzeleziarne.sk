@@ -1,9 +1,19 @@
-{% extends "@components/base/base.twig" %}
-
-{% set title = "01.0_homepage" %}
-
-{% block main %}
-
-Hello, World!
-
-{% endblock %}
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %} {% include "@components/topstory-section/topstory-section.twig" %}
+<div class="pubHomepage">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <a class="pub" href="#" target="_blank">
+         <img src="https://placehold.co/720x140" loading="lazy" alt="pub" />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="pub" href="#" target="_blank">
+         <img src="https://placehold.co/720x140" loading="lazy" alt="pub" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/posts/posts-homepage.twig" %} {% endblock %}
