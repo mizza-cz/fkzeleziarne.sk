@@ -24,10 +24,20 @@ strong {
 .mb-2 {
   margin-bottom: 1rem !important;
 }
+.g-5 {
+  --bs-gutter-y: 40px !important;
+  --bs-gutter-x: 40px !important;
+}
 .text-dark {
   color: var(--color-dark) !important;
 }
 .text-primary {
   color: var(--color-primary-100) !important;
+}
+.text-secondary {
+  color: var(--color-secondary-100) !important;
+}
+.text-white {
+  color: var(--color-light) !important;
 }
 /*! purgecss end ignore */

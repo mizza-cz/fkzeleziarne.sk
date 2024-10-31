@@ -5,15 +5,29 @@ block main %} {% include "@components/topstory-section/topstory-section.twig" %}
     <div class="row g-4">
       <div class="col-lg-6">
         <a class="pub" href="#" target="_blank">
-         <img src="https://placehold.co/720x140" loading="lazy" alt="pub" />
+          <img src="https://placehold.co/720x140" loading="lazy" alt="pub" />
         </a>
       </div>
       <div class="col-lg-6">
         <a class="pub" href="#" target="_blank">
-         <img src="https://placehold.co/720x140" loading="lazy" alt="pub" />
+          <img src="https://placehold.co/720x140" loading="lazy" alt="pub" />
         </a>
       </div>
     </div>
   </div>
 </div>
-{% include "@components/posts/posts-homepage.twig" %} {% endblock %}
+{% include "@components/scoreboard/scoreboard.twig" %} {% include
+"@components/posts/posts-homepage.twig" %} {% include
+"@components/television-section/television-section.twig" %}
+<div class="pubHomepage">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12">
+        <a class="pub" href="#" target="_blank">
+          <img src="https://placehold.co/1440x140" loading="lazy" alt="pub" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/academy-section/academy-section.twig" %} {% endblock %}

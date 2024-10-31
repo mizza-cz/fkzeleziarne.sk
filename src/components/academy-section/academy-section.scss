@@ -1,0 +1,86 @@
+.academy-section {
+  .pub {
+    width: 100%;
+    display: block;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__post {
+    text-align: center;
+    text-decoration-color: transparent;
+    display: block;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 12px;
+    }
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+      .h2 {
+        text-decoration-color: var(--color-primary-100);
+      }
+    }
+    .tags {
+      font-size: 18px;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .h2 {
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+  }
+  &__post-img {
+    width: 100%;
+    aspect-ratio: 952/666;
+    overflow: hidden;
+    margin-bottom: 24px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+  &__links {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0;
+      flex-wrap: wrap;
+    }
+  }
+  &__title {
+    span {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      letter-spacing: 0.1em;
+      display: block;
+      margin-top: 8px;
+      text-transform: uppercase;
+      font-family: "Right Gothic Tight";
+      color: var(--color-secondary-100);
+    }
+  }
+}
