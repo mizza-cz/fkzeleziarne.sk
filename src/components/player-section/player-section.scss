@@ -19,13 +19,17 @@
     @include media-breakpoint-down(lg) {
       max-width: 100%;
       flex: 100%;
+      aspect-ratio: 306/325;
     }
     img {
-      width: 80%;
-      object-fit: contain;
+      width: 100%;
+      object-fit: cover;
       margin: 0 auto;
-      object-position: bottom;
+      object-position: top;
       max-height: 550px;
+      @include media-breakpoint-down(lg) {
+        max-height: none;
+      }
     }
   }
   &__info {

@@ -2,7 +2,7 @@
   &__item {
     display: block;
     width: 100%;
-    height: 241px;
+    height: 100%;
     position: relative;
     background-color: var(--color-bg-secondary);
 
@@ -35,14 +35,15 @@
     }
   }
   &__img {
-    width: 174px;
+    width: 100%;
     margin: 0 auto;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 240/220;
     img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      object-position: bottom;
+      object-fit: cover;
+      object-position: top;
     }
   }
   &__number {
