@@ -52,12 +52,13 @@
     font-size: 40px;
     font-weight: 900;
     line-height: 56px;
-    padding-left: 40px;
+    padding-left: 4.5rem;
     margin-bottom: 56px;
     @include media-breakpoint-down(lg) {
       font-size: 32px;
       line-height: 38px;
       margin-bottom: 40px;
+      padding-left: 2.5rem;
     }
     span {
       display: block;
@@ -80,13 +81,14 @@
     padding: 16px 24px 24px;
     background-color: var(--color-dark);
     height: 120px;
-    min-width: 120px;
+    min-width: 155px;
+    text-align: center;
     @include media-breakpoint-down(lg) {
       font-size: 64px;
       height: 88px;
       line-height: normal;
       min-width: 88px;
-      padding: 0;
+      padding: 0 16px;
       text-align: center;
       top: -88px;
     }
